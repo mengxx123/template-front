@@ -4,14 +4,7 @@
         <div class="page-body">
             <div class="container container-main">
                 <div class="detail-box">
-                    <div class="img-box">
-                        <img src="/static/template/img/demo-1.jpg">
-                    </div>
-                    <div class="info-box">
-                        <div class="title"><span class="free">免费</span>旅游景区景点织梦企业模板</div>
-                        <div class="price">¥0元</div>
-                        <a class="btn" href="https://pan.baidu.com/s/1o8BUjm6" target="_blank">网盘下载</a>
-                    </div>
+                    <img src="/static/template/img/demo-1.jpg">
                 </div>
             </div>
         </div>

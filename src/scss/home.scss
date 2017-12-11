@@ -1,7 +1,7 @@
 @import "var";
 
 .page-home {
-    background-color: #eee;
+    //background-color: #eee;
 }
 .template-list {
     @include clearfix;
@@ -9,9 +9,15 @@
         width: 290px;
         margin-right: 16px;
         margin-bottom: 16px;
-        background: #FFF;
         float: left;
+        background: #fbfbfb;
         box-shadow: 0px 0px 2px #dddddd;
+        &:hover {
+            box-shadow: 0px 0px 10px #dddddd;
+        }
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
     }
     .img {
         display: block;
@@ -30,9 +36,4 @@
         float: left;
         color: #ff4b00;
     }
-}
-
-.feature-box {
-    height: 150px;
-    background-color: #fff;
 }

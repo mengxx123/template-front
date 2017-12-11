@@ -1,3 +1,20 @@
+h1 {
+    font-weight: normal;
+}
+a {
+    color: inherit;
+}
+.btn {
+    width: 95px;
+    height: 38px;
+    margin-left: 40px;
+    font-size: 16px;
+    display: block;
+    color: #FFF;
+    text-align: center;
+    line-height: 38px;
+    background-color: $primary;
+}
 html {
     min-width: 1300px;
     overflow: auto;
@@ -6,13 +23,37 @@ body {
     color: #666;
 }
 .container {
-    width: 1300px;
+    width: 1210px;
     margin: 0 auto;
+}
+.container-main {
+    padding-top: 16px;
 }
 .page-header {
     height: 90px;
     padding: 6px 0;
     background-color: #fff;
+    .logo {
+        float: left;
+        color: $primary;
+        font-size: 30px;
+        line-height: 80px;
+    }
+    .phone-box {
+        float: right;
+        padding-top: 10px;
+        .title {
+            margin-left: 2px;
+            margin-bottom: 4px;
+            font-size: 17px;
+            color: #616161;
+        }
+        .phone {
+            color: #E53E40;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
 }
 .page-body {
 
@@ -32,6 +73,7 @@ body {
 }
 .feature-box {
     padding: 35px 0;
+    background-color: #f8f8f8;
 }
 .feature-list {
     text-align: center;
@@ -39,7 +81,7 @@ body {
     .item {
         display: inline-block;
         //float: left;
-        width: 170px;
+        width: 160px;
     }
     .ic {
         width: 50px;
@@ -87,6 +129,9 @@ body {
         margin-left: 10px;
         border-left: 1px dashed #CCC;
         width: 18.2%;
+        &:first-child {
+            border-left: none;
+        }
     }
     .title {
         FONT-SIZE: 18px;
@@ -131,5 +176,62 @@ body {
     }
     .ic-4 {
         background-position: 0 -194px;
+    }
+}
+.top-bar {
+    height: 32px;
+    font-size: 12px;
+    line-height: 32px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #DFDFDF;
+    .welcome {
+        float: left;
+    }
+    .collection {
+        float: right;
+    }
+}
+.nav-box {
+    height: 42px;
+    background-color: $primary;
+    .nav-list {
+        @include clearfix;
+        .item {
+            float: left;
+        }
+        .link {
+            display: block;
+            padding: 0 18px;
+            color: #fff;
+            line-height: 42px;
+            &:hover {
+                color: $primary;
+                background-color: #fff;
+            }
+        }
+    }
+}
+.article-box {
+    width: 984px;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 14px;
+    border: 1px solid #eee;
+    .header {
+        margin-bottom: 24px;
+        border-bottom: 1px solid #eee;
+    }
+    .title {
+        display: inline-block;
+        font-size: 15px;
+        font-weight: bold;
+        color: #333;
+        border-bottom: 2px solid #FA0400;
+        height: 25px;
+        line-height: 25px;
+    }
+    p {
+        padding-top: 8px;
+        line-height: 30px;
     }
 }

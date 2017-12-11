@@ -1,0 +1,44 @@
+@import "var";
+
+.page-template-detail {
+
+}
+.detail-box {
+    @include clearfix;
+    .img-box {
+        float: left;
+        width: 420px;
+        height: 420px;
+        padding: 10px;
+        margin: 20px;
+        background: #ffffff;
+        border: #eeeeee 1px solid;
+        img {
+            width: 100%;
+        }
+    }
+    .info-box {
+        float: left;
+        .title {
+            font-size: 18px;
+        }
+        .free {
+            display: inline-block;
+            width: 47px;
+            height: 25px;
+            margin-right: 16px;
+            background: #ed1c24;
+            line-height: 25px;
+            margin-top: 8px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .price {
+            display: block;
+            margin: 0 10px 0 0;
+            font-size: 28px;
+            color: #ee1c10;
+            line-height: 50px;
+        }
+    }
+}
