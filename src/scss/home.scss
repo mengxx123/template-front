@@ -1,0 +1,38 @@
+@import "var";
+
+.page-home {
+    background-color: #eee;
+}
+.template-list {
+    @include clearfix;
+    .item {
+        width: 290px;
+        margin-right: 16px;
+        margin-bottom: 16px;
+        background: #FFF;
+        float: left;
+        box-shadow: 0px 0px 2px #dddddd;
+    }
+    .img {
+        display: block;
+        width: 290px;
+        height: 290px;
+    }
+    .name {
+        padding: 18px 27px 0 27px;
+        color: #666;
+    }
+    .footer {
+        padding: 16px 24px;
+        @include clearfix;
+    }
+    .price {
+        float: left;
+        color: #ff4b00;
+    }
+}
+
+.feature-box {
+    height: 150px;
+    background-color: #fff;
+}

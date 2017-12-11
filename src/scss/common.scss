@@ -1,0 +1,135 @@
+html {
+    min-width: 1300px;
+    overflow: auto;
+}
+body {
+    color: #666;
+}
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+.page-header {
+    height: 90px;
+    padding: 6px 0;
+    background-color: #fff;
+}
+.page-body {
+
+}
+.page-footer {
+    background: #333;
+    color: #999;
+    line-height: 1.6;
+    padding: 15px 0;
+    text-align: center;
+    .nav {
+        line-height: 200%;
+        a {
+            color: #999;
+        }
+    }
+}
+.feature-box {
+    padding: 35px 0;
+}
+.feature-list {
+    text-align: center;
+    @include clearfix;
+    .item {
+        display: inline-block;
+        //float: left;
+        width: 170px;
+    }
+    .ic {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto 12px auto;
+        background: url(/static/template/img/site.png) no-repeat;
+    }
+    .title {
+        text-align: center;
+    }
+    .ic-1 {
+        background-position: 0 -250px;
+    }
+    .ic-2 {
+        background-position: 0 -350px;
+    }
+    .ic-3 {
+        background-position: 0 -300px;
+    }
+    .ic-4 {
+        background-position: 0 -50px;
+    }
+    .ic-5 {
+        background-position: 0 0;
+    }
+    .ic-6 {
+        background-position: 0 -150px;
+    }
+    .ic-7 {
+        background-position: 0 -100px;
+    }
+}
+.help-box {
+    padding-top: 36px;
+    padding-bottom: 32px;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-top: 1px solid #eee;
+}
+.help-list {
+    @include clearfix;
+    .item {
+        float: left;
+        padding-left: 10px;
+        margin-left: 10px;
+        border-left: 1px dashed #CCC;
+        width: 18.2%;
+    }
+    .title {
+        FONT-SIZE: 18px;
+        COLOR: #2e2e2e;
+        HEIGHT: 30px;
+        line-height: 30px;
+        font-weight: normal;
+        text-align: center;
+        margin: 15px 0;
+    }
+    .ic {
+        display: block;
+        width: 60px;
+        height: 60px;
+        background: url(/static/template/img/foot_icon_bg.png) no-repeat;
+        margin: 0 auto;
+    }
+    .nav-list {
+        .nav-item {
+            text-align: center;
+            line-height: 20px;
+        }
+        .link {
+            COLOR: #666666;
+        }
+    }
+    .qrcode {
+        width: 150px;
+        height: 150px;
+    }
+    .qrcode-text {
+        font-size: 12px;
+    }
+    .ic-1 {
+
+    }
+    .ic-2 {
+        background-position: 0 -129px;
+    }
+    .ic-3 {
+        background-position: 0 -65px;
+    }
+    .ic-4 {
+        background-position: 0 -194px;
+    }
+}

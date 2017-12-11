@@ -1,15 +1,28 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+
+const Home = resolve => require(['@/views/template/Home'], resolve)
+const About = resolve => require(['@/views/template/About'], resolve)
+const Template = resolve => require(['@/views/template/TemplateDetail'], resolve)
 
 Vue.use(Router)
 
-export default new Router({
-  routes: [
+let routes = [
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+        path: '/',
+        component: Home
+    },
+    {
+        path: '/about',
+        component: About
+    },
+    {
+        path: '/templates/:id',
+        component: Template
     }
-  ]
+]
+
+export default new Router({
+    mode: 'history',
+    routes: routes
 })
