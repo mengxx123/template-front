@@ -91,6 +91,17 @@
             <div class="info">公司名称：广州云设科技有限公司 电话：156-0222-9283</div>
             <div class="info">dedecms模板,dedecms企业模板,dedecms资讯模板,高端HTML5响应式模板,dedecms手机模板,Html5+CSS3模板,网站模板,网页模板,免费网页模板</div>
         </footer>
+        <div class="side-nav-list">
+            <div class="item">
+                <a class="a1" href="">在线咨询</a>
+            </div>
+            <div class="item">
+                <a href="">售前咨询</a>
+            </div>
+            <div class="item">
+                <a href="">定制/仿站</a>
+            </div>
+        </div>
     </div>
 </template>
 

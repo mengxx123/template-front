@@ -2,6 +2,41 @@
     <div class="page page-home">
         <ui-header></ui-header>
         <div class="page-body">
+            <div class="page-banner">
+                <div class="banner-item item-1"></div>
+                <div class="container">
+                    <ul class="main-nav-list">
+                        <li class="item">
+                            <a class="link" href="#"><i class="icon icon-category"></i> 企业模板</a>
+                        </li>
+                        <li class="item">
+                            <a class="link" href="#"><i class="icon icon-category"></i> 营销模板</a>
+                        </li>
+                        <li class="item">
+                            <a class="link" href="#"><i class="icon icon-category"></i> 资讯模板</a>
+                        </li>
+                        <li class="item">
+                            <a class="link" href="#"><i class="icon icon-category"></i> 手机模板</a>
+                        </li>
+                        <li class="item">
+                            <a class="link" href="#"><i class="icon icon-category"></i> HTML5/CSS3</a>
+                        </li>
+                    </ul>
+                    <div class="mainAright wrap Right">
+                        <div class="side Left">
+                            <div class="akeypost">
+                                <ul id="marqueebox3">
+                                    <li><h3>共有650套模板</h3></li>
+                                    <!--<li><h3>1,070套完美插件</h3></li>-->
+                                    <!--<li><h3>2,700多家合作商</h3></li>-->
+                                </ul>
+                            </div>
+                            <div class="tab">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="container container-main">
                 <!--<div class="sort clearfix">-->
                     <!--<div class="serbz">-->

@@ -21,23 +21,70 @@ html {
 }
 body {
     color: #666;
+    background-color: #f2f2f2;
 }
 .container {
-    width: 1210px;
+    width: 1250px;
     margin: 0 auto;
 }
 .container-main {
     padding-top: 16px;
 }
 .page-header {
-    height: 90px;
+    height: 104px;
     padding: 6px 0;
     background-color: #fff;
+    .container {
+        padding: 16px 0;
+    }
     .logo {
         float: left;
-        color: $primary;
-        font-size: 30px;
-        line-height: 80px;
+        margin-right: 136px;
+        margin-top: 8px;
+        img {
+            width: 160px;
+        }
+    }
+    .center {
+        float: left;
+    }
+    .sear_box {
+        width: 520px;
+        margin-bottom: 8px;
+        overflow: hidden;
+        border: 2px solid $primary;
+        .main_sear_inp {
+            float: left;
+            width: 402px;
+            height: 36px;
+            line-height: 36px;
+            padding: 8px;
+            border: 0;
+            outline: none;
+            font-size: 14px;
+        }
+        .main_sear_btn {
+            float: right;
+            width: 100px;
+            height: 36px;
+            color: #fff;
+            font-size: 16px;
+            line-height: 34px;
+            display: inline-block;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background-color: $primary;
+        }
+    }
+    .keywords {
+        .link {
+            margin-right: 8px;
+            color: #999;
+            &:hover {
+                color: $primary;
+            }
+        }
     }
     .phone-box {
         float: right;
@@ -55,6 +102,7 @@ body {
         }
     }
 }
+
 .page-body {
 
 }
@@ -68,6 +116,34 @@ body {
         line-height: 200%;
         a {
             color: #999;
+        }
+    }
+}
+.side-nav-list {
+    position: fixed;
+    right: 0;
+    bottom: 160px;
+    z-index: 100;
+    width: 74px;
+    background-color: #fff;
+    .item {
+        height: 72px;
+        a {
+            color: #666666;
+            font-size: 12px;
+            text-align: center;
+            width: 100%;
+            display: block;
+            padding: 50px 0 5px 0;
+            border: 1px solid #ededed;
+            border-top: 0;
+            background-image: url("/static/template/floatbox.png");
+            background-position: center 8px;
+            background-repeat: no-repeat;
+        }
+        .a1 {
+            color: #fff;
+            background-color: #9cb8e2;;
         }
     }
 }
@@ -193,20 +269,36 @@ body {
 }
 .nav-box {
     height: 42px;
-    background-color: $primary;
+    //background-color: $primary;
+    background-color: #fff;
+    border-bottom: 2px solid $primary;
+    .all-category {
+        display: block;
+        float: left;
+        width: 240px;
+        margin-right: 32px;
+        text-align: center;
+        line-height: 42px;
+        color: #fff;
+        background-color: $primary;
+    }
     .nav-list {
+        float: left;
         @include clearfix;
         .item {
             float: left;
         }
         .link {
             display: block;
-            padding: 0 18px;
-            color: #fff;
+            padding: 0 24px;
+            //color: #fff;
+            color: #333;
+            font-size: 16px;
             line-height: 42px;
+            &.active,
             &:hover {
                 color: $primary;
-                background-color: #fff;
+                //background-color: #fff;
             }
         }
     }
